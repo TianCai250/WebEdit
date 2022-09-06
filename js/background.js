@@ -15,7 +15,7 @@ const sendData = (data) => {
 const contextMenus = {
   id: "openDesignMode",
   title: "开启编辑模式",
-  type: "checkbox",
+  type: "normal",
   contexts: ["page"],
   onclick: function () {
     sendData({ designMode: "on" });
