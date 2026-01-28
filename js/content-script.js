@@ -8,4 +8,5 @@ chrome.runtime.onMessage.addListener((data, sender, sendResponse) => {
   } else {
     document.designMode = "off";
   }
+  sendResponse("ok");
 });

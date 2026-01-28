@@ -25,6 +25,6 @@ const contextMenus = {
 chrome.contextMenus.create(contextMenus);
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  console.log(message);
   sendData(message);
+  sendResponse('ok')
 });
